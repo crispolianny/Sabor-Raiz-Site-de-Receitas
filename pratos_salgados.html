@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas do Nordeste</title>
+    <link rel="stylesheet" href="stylesite.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #F9E8D2;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #A8D8B9;
+            color: #023d08;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 10px;
+            background-color: #A8D8B9;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #812700;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #812700;
+            color: white;
+        }
+
+        main {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #8B0000;
+            margin: 40px 0 20px;
+            text-transform: uppercase;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .receita {
+            width: 250px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .receita:hover {
+            transform: scale(1.05);
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .receita img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            margin: 0 auto;
+        }
+
+        .receita h3 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #8B0000;
+            margin-top: 10px;
+        }
+
+        .receita h3 a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .receita h3 a:hover {
+            text-decoration: underline;
+        }
+
+        .receita p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logosaborraiz.png" alt="Logo do Sabor Raiz" class="logo">
+        <h1>Seja Bem-Vindo(a) ao Sabor Raiz!</h1>
+        <h2>Encontre aqui as melhores receitas nordestinas!</h2>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="secoes-receitas.html">Seções de Receitas</a>
+            <a href="contato.html">Contato</a>
+            <a href="sobre.html">Sobre</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Sugestões de pratos salgados:</h2>
+        <section>
+            <div class="receita"><h3><a href="baiao-de-dois.html">Baião de Dois</a></h3>
+                <img src="baiao-de-dois.jpg" alt="Baião de Dois">
+                <p>Arroz, feijão verde e carne de sol.</p>
+            </div>
+            <div class="receita"><h3><a href="quibebe.html">Quibebe</a></h3>
+                <img src="quibebe.jpg" alt="Quibebe">
+                <p>Purê de abóbora com arroz e carne de sol.</p>
+            </div>
+            <div class="receita"><h3><a href="acaraje.html">Acarajé</a></h3>
+                <img src="acaraje.jpg" alt="Acarajé">
+                <p>Bolinho de feijão-fradinho frito.</p>
+            </div>
+            <div class="receita"><h3><a href="moqueca-baiana.html">Moqueca Baiana</a></h3>
+                <img src="moqueca-baiana.jpg" alt="Moqueca Baiana">
+                <p>Peixe, azeite de dendê e leite de coco.</p>
+            </div>
+            <div class="receita">
+                <h3><a href="feijao-verde.html">Feijão Verde</a></h3>
+                <img src="feijao-verde.jpg" alt="Feijão Verde">
+                <p>Feijão verde cozido com carne de sol.</p>
+            </div>
+            <div class="receita"><h3><a href="escondidinho.html">Escondidinho</a></h3>
+                <img src="escondidinho.jpg" alt="Escondidinho">
+                <p>Carne de sol desfiada com purê de mandioca.</p>
+            </div>
+            <div class="receita"><h3><a href="bobo-camarao.html">Bobó de Camarão</a></h3>
+                <img src="bobo-camarao.jpg" alt="Bobó de Camarão">
+                <p>Camarão cozido com purê de mandioca.</p>
+            </div>
+            <div class="receita"><h3><a href="cuscuz.html">Cuscuz Nordestino</a></h3>
+                <img src="cuscuz.jpg" alt="Cuscuz Nordestino">
+                <p>Farinha de milho servida com carne ou leite.</p>
+            </div>
+            <div class="receita"><h3><a href="sarapatel.html">Sarapatel</a></h3>
+                <img src="sarapatel.jpg" alt="Sarapatel">
+                <p>Prato com vísceras de porco e temperos.</p>
+            </div>
+            <div class="receita"><h3><a href="carne-de-sol-na-brasa.html">Carne de Sol na Brasa</a></h3>
+                <img src="carne-na-brasa.jpg" alt="Carne de Sol na Brasa">
+                <p>Carne de sol assada na brasa.</p>
+            </div>
+            <div class="receita"><h3><a href="pamonha.html">Pamonha</a></h3>
+                <img src="pamonha.jpg" alt="Pamonha"><p>Milho verde cozido, doce ou salgado.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sabor Raiz - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

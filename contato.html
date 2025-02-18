@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Sabor Raiz</title>
+    <link rel="stylesheet" href="stylesite.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #F9E8D2;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #A8D8B9;
+            color: #023d08;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            background-color: #A8D8B9;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #812700;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #812700;
+            color: white;
+        }
+
+        main {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .contato-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #8B0000;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #444;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 20px 0;
+        }
+
+        label {
+            font-weight: bold;
+            color: #812700;
+            text-align: left;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #8B0000;
+            color: white;
+            padding: 12px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #A52A2A;
+        }
+
+        .informacoes {
+            background-color: #FFE4C4;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .informacoes a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #8B0000;
+        }
+
+        .informacoes a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logosaborraiz.png" alt="Logo do Sabor Raiz" class="logo">
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="secoesrece.html">Seções de Receitas</a>
+            <a href="contato.html">Contato</a>
+            <a href="sobre.html">Sobre</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contato-container">
+            <h1>Entre em Contato</h1>
+            <p>Se você tem alguma dúvida, sugestão ou deseja saber mais sobre nossas receitas, preencha o formulário abaixo.</p>
+            
+            <form action="envia_email.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <div class="informacoes">
+                <h2>Outras Formas de Contato</h2>
+                <p>Email: contato@saborraiz.com.br</p>
+                <p>Telefone: (87) 1234-5678</p>
+                <p>Endereço: Apenas Online</p>
+                
+                <h3>Siga-nos nas Redes Sociais</h3>
+                <a href="https://www.facebook.com/saborraiz" target="_blank">Facebook</a> | 
+                <a href="https://www.instagram.com/saborraiz" target="_blank">Instagram</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sabor Raiz. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

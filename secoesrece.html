@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas do Nordeste</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #F9E8D2;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        header {
+            background-color: #A8D8B9;
+            color: #023d08;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 10px;
+            background-color: #A8D8B9;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #812700;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #812700;
+            color: white;
+        }
+
+        main {
+            padding: 40px 20px;
+        }
+
+        h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #8B0000;
+            margin: 40px 0 20px;
+            text-transform: uppercase;
+        }
+
+        .receitas-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .receita {
+            width: 250px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .receita:hover {
+            transform: scale(1.05);
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .receita img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            margin: 0 auto;
+        }
+
+        .receita h3 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #8B0000;
+            margin-top: 10px;
+        }
+
+        .receita p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logosaborraiz.png" alt="Logo do Sabor Raiz" class="logo">
+        <h1>Seja Bem-Vindo(a) ao Sabor Raiz!</h1>
+        <h2>Encontre aqui as melhores receitas nordestinas!</h2>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="secoesrece.html">Seções de Receitas</a>
+        <a href="contato.html">Contato</a>
+        <a href="sobre.html">Sobre</a>
+    </nav>
+
+    <main>
+        <h2>Confira abaixo as sugestões de pratos:</h2>
+
+        <section class="receitas-container">
+            <div class="receita">
+                <h3><a href="pratos_doce.html">Pratos Doces</a></h3>
+                <img src="pratos-doce.jpg" alt="Pratos Doces">
+                <p>Diversas opções em receitas doces nordestinas para você.</p>
+            </div>
+
+            <div class="receita">
+                <h3><a href="pratos_salgados.html">Pratos Salgados</a></h3>
+                <img src="pratos-salgados.jpg" alt="Pratos Salgados">
+                <p>Experimente uma explosão de sabor nordestino com as nossas receitas salgadas.</p>
+            </div>
+
+            <div class="receita">
+                <h3><a href="bebidas.html">Bebidas</a></h3>
+                <img src="bebidas.jpg" alt="Bebidas">
+                <p>Mergulhe nos paladares triviais de nossas bebidas.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sabor Raiz. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+

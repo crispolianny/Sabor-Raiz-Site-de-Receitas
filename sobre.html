@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Sabor Raiz</title>
+    <link rel="stylesheet" href="stylesite.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #F9E8D2;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #A8D8B9;
+            color: #023d08;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 10px;
+            background-color: #A8D8B9;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #812700;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #812700;
+            color: white;
+        }
+
+        main {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .sobre h1 {
+            font-size: 36px;
+            color: #8B0000;
+            margin-bottom: 25px;
+        }
+
+        .sobre p {
+            font-size: 18px;
+            color: #444;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            line-height: 1.8;
+        }
+
+        h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #8B0000;
+            margin: 40px 0 20px;
+        }
+
+        .desenvolvedoras {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .desenvolvedora {
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .desenvolvedora:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .desenvolvedora img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid #A8D8B9;
+            transition: transform 0.3s;
+        }
+
+        .desenvolvedora img:hover {
+            transform: scale(1.1);
+        }
+
+        .desenvolvedora h3 {
+            font-size: 22px;
+            color: #8B0000;
+            margin-bottom: 12px;
+        }
+
+        .desenvolvedora p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logosaborraiz.png" alt="Logo do Sabor Raiz" class="logo">
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="secoesrece.html">Seções de Receitas</a>
+            <a href="contato.html">Contato</a>
+            <a href="sobre.html">Sobre</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="sobre">
+            <h1>Sobre o Sabor Raiz</h1>
+            <p>O Sabor Raiz foi criado com o objetivo de compartilhar a rica culinária nordestina e oferecer aos visitantes uma experiência única através de receitas tradicionais e autênticas. Nossa equipe se dedicou a criar um espaço que valoriza a cultura e os sabores do Nordeste.</p>
+
+            <h2>Conheça as Desenvolvedoras</h2>
+            <div class="desenvolvedoras">
+                <div class="desenvolvedora">
+                    <h3>Luisa Clara</h3>
+                    <p>Sou Luisa Clara, desenvolvedora Back-End do Sabor Raiz. Tenho 16 anos e resido em Paulistana, no Piauí. Sou uma das desenvolvedoras deste site, criado com o propósito de levar um pedaço da cultura e da gastronomia nordestina para o mundo. Junto com minhas parceiras, planejamos cuidadosamente cada detalhe para proporcionar uma experiência autêntica e enriquecedora. Espero que todos apreciem nosso trabalho e sintam o verdadeiro sabor do Nordeste em cada receita compartilhada.</p>
+                    <img src="foto1.jpeg" alt="Desenvolvedora 1">
+                </div>
+                <div class="desenvolvedora">
+                    <h3>Ana Cristina</h3>
+                    <p>Sou Ana Cristina, tenho 15 anos e sou desenvolvedora Front-End do Sabor Raiz. Tenho um amor pela culinária nordestina e me empenhei em criar uma interface intuitiva e acessível para tornar a navegação agradável a todos os usuários.</p>
+                    <img src="foto2.jpeg" alt="Desenvolvedora 2">
+                </div>
+                <div class="desenvolvedora">
+                    <h3>Ingridy Evylem</h3>
+                    <p>Meu nome é Ingridy Evylem e sou a Designer Gráfica do Sabor Raiz. Responsável pela identidade visual, trabalhei na criação do logotipo, na paleta de cores e na estética geral do site para refletir a autenticidade e o encanto da culinária nordestina.</p>
+                    <img src="foto3.jpeg" alt="Desenvolvedora 3">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sabor Raiz. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+

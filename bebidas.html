@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas do Nordeste</title>
+    <link rel="stylesheet" href="stylesite.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #F9E8D2;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #A8D8B9;
+            color: #023d08;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 10px;
+            background-color: #A8D8B9;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #812700;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #812700;
+            color: white;
+        }
+
+        main {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #8B0000;
+            margin: 40px 0 20px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .receita {
+            width: 250px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .receita img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            margin: 0 auto;
+        }
+
+        .receita h3 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #8B0000;
+            margin-top: 10px;
+        }
+
+        .receita p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logosaborraiz.png" alt="Logo do Sabor Raiz" class="logo">
+        <h1>Seja Bem-Vindo(a) ao Sabor Raiz!</h1>
+        <h2>Encontre aqui as melhores receitas nordestinas!</h2>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="seçõesrece.html">Seções de Receitas</a>
+            <a href="contato.html">Contato</a>
+            <a href="sobre.html">Sobre</a>
+        </nav>
+    </header>
+    <main>
+        
+        <h2>Confira abaixo as sugestões de bebidas.</h2>
+
+        <section>
+            <div class="receita">
+                <h3><a href="cachaca.html">Cachaça Nordestina</a></h3>
+                <img src="cachaca.jpg" alt="Cachaça Nordestina">
+                <p>Licor típico nordestino, perfeito para festas e comemorações.</p>
+            </div>
+            <div class="receita">
+                <h3><a href="baiacu.html">Baiacu</a></h3>
+                <img src="baiacu.jpg" alt="Baiacu">
+                <p>Drink refrescante com frutas tropicais e cachaça.</p>
+            </div>
+            <div class="receita">
+                <h3><a href="caldo-de-cana.html">Caldo de Cana</a></h3>
+                <img src="caldo-de-cana.jpg" alt="Caldo de Cana">
+                <p>Suco doce de cana-de-açúcar, uma bebida tradicional nordestina.</p>
+            </div>
+            <div class="receita">
+                <h3><a href="seriguela.html">Seriguela</a></h3>
+                <img src="seriguela.jpg" alt="Seriguela">
+                <p>Bebida doce e refrescante feita com o fruto da seriguela.</p>
+            </div>
+            <div class="receita">
+                <h3><a href="suco-de-morango.html">Suco de Morango</a></h3>
+                <img src="suco-de-morango.jpg" alt="Suco de Morango">
+                <p>Suco natural de morango com um toque de açúcar mascavo.</p>
+            </div>
+            <div class="receita">
+                <h3><a href="coco-verde.html">Coco Verde</a></h3>
+                <img src="coco-verde.jpg" alt="Coco Verde">
+                <p>Água de coco fresca, uma das bebidas mais populares do Nordeste.</p>
+            </div>
+            <div class="receita">
+                <h3><a href="guarana.html">Guaraná Nordestino</a></h3>
+                <img src="guarana.jpg" alt="Guaraná Nordestino">
+                <p>Refresco feito com o guaraná, uma fruta amazônica típica do Nordeste.</p>
+            </div>
+            <div class="receita">
+                <h3><a href="suco-de-manga.html">Suco de Manga</a></h3>
+                <img src="suco-de-manga.jpg" alt="Suco de Manga">
+                <p>Suco natural de manga, refrescante e doce.</p>
+            </div>
+            <div class="receita">
+                <h3><a href="batida-de-caju.html">Batida de Caju</a></h3>
+                <img src="batida-de-caju.jpg" alt="Batida de Caju">
+                <p>Bebida alcoólica feita com caju, cachaça e leite condensado.</p>
+            </div>
+            <div class="receita">
+                <h3><a href="vitamina-de-abacate.html">Vitamina de Abacate</a></h3>
+                <img src="vitamina-de-abacate.jpg" alt="Vitamina de Abacate">
+                <p>Bebida cremosa e nutritiva feita com abacate, leite e açúcar.</p>
+            </div>
+            <div class="receita">
+                <h3><a href="suco-de-goiaba.html">Suco de Goiaba</a></h3>
+                <img src="suco-de-goiaba.jpg" alt="Suco de Goiaba">
+                <p>Suco natural feito com goiaba madura e adoçado a gosto.</p>
+            </div>
+            <div class="receita">
+                <h3><a href="licor-de-caju.html">Licor de Caju</a></h3>
+                <img src="licor-de-caju.jpg" alt="Licor de Caju">
+                <p>Licor alcoólico suave feito com o fruto do caju.</p>
+            </div>
+            <div class="receita">
+                <h3><a href="mangaba.html">Mangaba</a></h3>
+                <img src="mangaba.jpg" alt="Mangaba">
+                <p>Bebida refrescante feita com o fruto da mangabeira.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Sabor Raiz. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor Raiz - Receitas Nordestinas</title>
+    <link rel="stylesheet" href="stylesite.css">
+    <style>
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 10px;
+            background-color: #A8D8B9;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #812700;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #812700;
+            color: white;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F9E8D2;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .banner {
+            width: 100%;
+            max-height: 400px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            max-height: 400px;
+            border-radius: 10px;
+        }
+
+        .pesquisa-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        #search-bar {
+            padding: 10px;
+            width: 300px;
+            border: 2px solid #8B0000;
+            border-radius: 20px 0 0 20px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        #search-bar:focus {
+            border-color: #FF4500;
+        }
+
+        .pesquisa-container button {
+            padding: 10px 15px;
+            background-color: #8B0000;
+            border: none;
+            border-radius: 0 20px 20px 0;
+            color: white;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .pesquisa-container button:hover {
+            background-color: #FF4500;
+        }
+
+        .receitas-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .receita {
+            width: 250px;
+            text-align: center;
+        }
+
+        .receita img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        section {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: bold;
+            color: #8B0000;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #444;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px 0; 
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo do botão de topo menor, moderno e delicado */
+        #topo {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #FF6F61; /* Cor suave e moderna */
+            color: white;
+            padding: 8px 12px; /* Tamanho reduzido para um botão mais delicado */
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 20px; /* Tamanho de fonte ajustado */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombras mais suaves */
+            transition: background-color 0.3s, transform 0.3s ease-in-out; /* Transições suaves */
+        }
+
+        #topo:hover {
+            background-color: #FF5733; /* Cor mais intensa ao passar o mouse */
+            transform: translateY(-3px); /* Pequeno efeito de flutuação */
+        }
+
+        #topo:focus {
+            outline: none;
+        }
+
+        .newsletter form {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .newsletter input {
+            padding: 10px;
+            width: 250px;
+            border-radius: 20px;
+            border: 2px solid #8B0000;
+        }
+
+        .newsletter button {
+            padding: 10px 15px;
+            background-color: #8B0000;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .newsletter button:hover {
+            background-color: #FF4500;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logosaborraiz.png" alt="Logo do Sabor Raiz" class="logo">
+        <h1>Seja Bem-Vindo(a) ao Sabor Raiz!</h1>
+        <h2>Os melhores sabores do Nordeste na sua cozinha!</h2>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="secoesrece.html">Seções de Receitas</a>
+        <a href="contato.html">Contato</a>
+        <a href="sobre.html">Sobre</a>
+    </nav>
+
+    <section class="banner">
+        <img src="banner.jpg" alt="Banner de comida nordestina">
+    </section>
+
+    <div class="pesquisa-container">
+        <input type="text" id="search-bar" placeholder="Busque uma receita...">
+        <button onclick="searchRecipe()">🔍</button>
+    </div>
+
+    <main>
+        
+        <section class="destaques">
+            <h2>Receitas Populares</h2>
+            <div class="receitas-container">
+                <div class="receita">
+                    <h3><a href="baiao-de-dois.html">Baião de Dois</a></h3>
+                    <img src="baiao-de-dois.jpg" alt="Baião de Dois">
+                </div>
+                <div class="receita">
+                    <h3><a href="acaraje.html">Acarajé</a></h3>
+                    <img src="acaraje.jpg" alt="Acarajé">
+                </div>
+                <div class="receita">
+                    <h3><a href="cuscuz.html">Cuscuz Nordestino</a></h3>
+                    <img src="cuscuz.jpg" alt="Cuscuz Nordestino">
+                </div>
+            </div>
+        </section>
+
+        <section class="momento">
+            <h2>Receitas do Momento</h2>
+            <p>Descubra pratos sazonais e receitas especiais para cada época do ano!</p>
+        </section>
+
+        <section class="cultura">
+            <h2>A Cultura da Culinária Nordestina</h2>
+            <p>Os sabores do Nordeste são marcados por ingredientes típicos como carne de sol, tapioca, cuscuz e leite de coco. Cada prato conta um pouco da história e tradição do povo nordestino.</p>
+        </section>
+
+        <section class="depoimentos">
+            <h2>O que nossos visitantes estão dizendo?</h2>
+            <blockquote>
+                <p>"Fiz o Baião de Dois seguindo a receita do site e ficou perfeito!" - <strong>Maria Santos</strong></p>
+                <p>"Amo as receitas e a facilidade de encontrar pratos típicos aqui!" - <strong>João Oliveira</strong></p>
+            </blockquote>
+        </section>
+
+        <section class="newsletter">
+            <h2>Receba nossas novidades!</h2>
+            <p>Cadastre seu e-mail para receber receitas exclusivas.</p>
+            <form>
+                <input type="email" placeholder="Seu e-mail" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sabor Raiz. Todos os direitos reservados.</p>
+        <p>Siga-nos nas redes sociais:</p>
+        <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">WhatsApp</a>
+    </footer>
+
+    <a href="#" id="topo">↑ Topo</a>
+
+</body>
+</html>

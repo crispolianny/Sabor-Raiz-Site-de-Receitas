@@ -1,0 +1,67 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #F9E8D2;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #A8D8B9;
+    color: #023d08;
+    text-align: center;
+    padding: 20px;
+}
+.logo {
+    width: 250px;  
+    height: auto; 
+    margin-left: 20px;
+}
+nav {
+    text-align: center;
+    /*margin-top: 10px;*/
+    position: sticky;
+    top: 0;
+    background-color: #A8D8B9;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: #812700; 
+    font-weight: bold;
+    
+}
+main {
+    padding: 20px;
+}
+.receita {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+.receita h3 a {
+    text-decoration: none;
+    color: #812700;
+}
+.receita img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.navigation-button{
+    text-align:center;
+    position: relative;
+}
